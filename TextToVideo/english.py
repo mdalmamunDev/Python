@@ -60,6 +60,13 @@ def merge_audio_video(video_path, audio_path, output_path):
     """ Merge audio with video """
     os.system(f"""ffmpeg -y -i {video_path} -i {audio_path} -c:v copy -c:a aac -b:a 192k -shortest {output_path}""")
 
+
+
+
+
+
+
+
 # Input Data
 text = "Hello, this is an AI-generated video without using MoviePy. The text will appear one sentence at a time, like a real video. This will be synchronized with the speech to make the video more natural."
 image_path = "image.jpg"  # Replace with your image file
